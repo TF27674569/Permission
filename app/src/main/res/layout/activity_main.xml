@@ -11,6 +11,7 @@
     tools:context="com.permission.MainActivity">
 
     <Button
+        android:id="@+id/btnClick"
         android:layout_width="match_parent"
         android:text="click"
         android:onClick="click"

@@ -56,12 +56,13 @@ public class APremissionFragment extends Fragment {
         mCallback.onNext(unrequestPermission.isEmpty());
     }
 
-
+    // 是否授权过
     @TargetApi(Build.VERSION_CODES.M)
     boolean isGranted(String permission) {
         return getActivity().checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED;
     }
 
+    // 查看权限是否符合policy的规定
     @TargetApi(Build.VERSION_CODES.M)
     boolean isRevoked(String permission) {
         return getActivity().getPackageManager().isPermissionRevokedByPolicy(permission, getActivity().getPackageName());

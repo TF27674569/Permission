@@ -24,4 +24,9 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile project(':premission')
+    compile 'com.github.TF27674569:AndroidDao:v1.0'
+    compile 'com.github.TF27674569:Http:v1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.0'
+    compile 'com.alibaba:fastjson:1.1.67.android'
+    compile 'com.github.TF27674569:banner:v1.0'
 }
